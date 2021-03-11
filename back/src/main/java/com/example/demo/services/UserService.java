@@ -8,11 +8,11 @@ import java.util.List;
 public interface UserService {
     List<User> getAll();
 
-    User getById(String userId);
+    User getById(String userId) throws UserServiceException;
 
-    User create(User user);
+    User create(User user) throws UserServiceException;
 
-    User update(User user);
+    User update(User user) throws UserServiceException;
 
-    void remove(String userId);
+    void remove(String userId) throws UserServiceException;
 }
