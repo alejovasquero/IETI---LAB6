@@ -3,7 +3,7 @@ username: david
 password: vasquez
 
 
-LINK FOR [Firebase](https://task-planner-25eff.web.app/usersList)(NOT FETCHING DATA, MAYBE BECAUSE CORS)
+LINK FOR [Firebase](https://task-planner-25eff.web.app/usersList)(NOT FETCHING DATA, MAYBE BECAUSE CORS)  
 LINK FOR [API](http://ieti-lab6.southcentralus.azurecontainer.io:8080/users)
 
 # 2.1 Task Planner API
