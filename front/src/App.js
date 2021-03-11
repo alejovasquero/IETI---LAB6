@@ -5,6 +5,7 @@ import Tasks from './tasks/Tasks.js'
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import TaskCreator from './tasks/TaskCreator.js';
 import UserProfile from './users/UserProfile';
+import { UsersPage } from './usersPage';
 const LoginView = () => (
   <Login />
 );
@@ -103,6 +104,10 @@ class App extends React.Component {
       <UserProfile onConfigSubmit={this.handleUserConfig}></UserProfile>
     );
 
+    const UserListPage = () => (
+      <UsersPage></UsersPage>
+    );
+
     return (
       <div className="App">
         <Router>
@@ -116,6 +121,7 @@ class App extends React.Component {
                 <Route exact path="/tasks" component={TasksView} />
                 <Route exact path="/create" component={TasksCreator} />
                 <Route exact path="/user" component={UserProfileComponent} />
+                <Route exact path="/usersList" component={UserListPage} />
               </div>
 
 
